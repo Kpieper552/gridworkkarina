@@ -30,7 +30,7 @@
 
 #item-b {
     grid-area: textarea;
-    max-height: 200px;
+
 }
 
 #item-c {
@@ -43,8 +43,8 @@
 
 #item-e {
     grid-area: aside-dynamic;
-    background-color: #F7D3CF;
-}
+    max-height: 100px
+    }
 
 #item-f {
     grid-area: footer;
@@ -60,12 +60,12 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 50px auto 100px 50px 50px 50px;
         grid-template-areas:
-            "header"
-            "textarea"
-            "aside-big"
-            "aside-small"
-            "aside-dynamic"
-            "footer";
+            "header aside-big aside-big"
+            "textarea aside-big aside-big"
+            "textarea aside-small aside-dynamic"
+            "textarea aside-small aside-dynamic"
+            "textarea aside-small aside-dynamic"
+            "footer footer footer";
     }
 }
 
